@@ -1,1 +1,16 @@
+name: "Playing with Github Actions"
 
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: "Testing Github Actions"
+        run: pwd
+
+      - name: "Printing"
+        run: echo "Hello World"
